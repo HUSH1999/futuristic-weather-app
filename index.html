@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Weather App</title>
+   <link rel="manifest" href="/manifest.json">
+   <link rel="apple-touch-icon" href="/icons/icon-192.png">
+   <meta name="theme-color" content="#1a73e8">
+
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script>
+      tailwind.config = {
+         darkMode: 'class',
+         theme: {
+            extend: {
+               fontFamily: {
+                  futuristic: ['"Orbitron"', 'sans-serif'],
+               },
+               colors: {
+                  primary: '#1a73e8',
+                  secondary: '#0f172a'
+               }
+            }
+         }
+      }
+   </script>
+   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body
+   class="bg-gradient-to-br from-slate-900 to-gray-800 text-white min-h-screen flex flex-col items-center px-4 py-6 transition-colors duration-300 dark:bg-black">
+   <header class="w-full max-w-4xl flex justify-between items-center mb-8">
+      <h1 class="text-4xl font-futuristic font-semibold tracking-wide text-primary drop-shadow-md">⚡ WeatherX</h1>
+      <div class="flex items-center gap-4">
+         <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="modeToggle" class="sr-only peer" onchange="toggleMode()">
+            <div
+               class="w-11 h-6 bg-gray-300 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-500 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all">
+            </div>
+         </label>
+         <button onclick="detectLocation()"
+            class="bg-primary hover:bg-blue-700 transition px-4 py-2 rounded-md shadow text-white text-sm">📍 Use My
+            Location</button>
+      </div>
+   </header>
+
+   <main class="w-full max-w-4xl flex flex-col items-center">
+      <div class="w-full flex flex-col sm:flex-row items-center gap-4 mb-8">
+         <input type="text" id="cityInput" placeholder="Search city..."
+            class="w-full sm:w-auto flex-1 px-5 py-3 bg-white/10 rounded-lg border border-gray-600 placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-primary" />
+         <button onclick="getWeather()"
+            class="px-6 py-3 bg-primary hover:bg-blue-700 transition rounded-lg shadow text-white text-base">Search</button>
+      </div>
+
+      <section id="weatherInfo" class="hidden bg-white/10 backdrop-blur-md rounded-2xl p-6 w-full max-w-lg shadow-lg">
+      </section>
+
+      <section id="forecast" class="flex gap-4  flex-wrap justify-center mt-6">
+      </section>
+   </main>
+
+   <script src="/js/main.js"></script>
+</body>
+
+</html>
