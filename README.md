@@ -27,7 +27,7 @@ WeatherX is a sleek, modern, and responsive weather forecast web app built with 
 
 ## 🖥️ Live Demo
 
-> [🌐 View Live on GitHub Pages](https://HUSH1999.github.io/futuristic-weather-app.git)
+> [🌐 View Live on GitHub Pages](https://hush1999.github.io/futuristic-weather-app.git)
 
 ## 🔧 Setup & Installation
 
