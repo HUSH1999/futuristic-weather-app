@@ -10,7 +10,6 @@ WeatherX is a sleek, modern, and responsive weather forecast web app built with 
 - 📅 3-day forecast + hourly breakdown
 - 🎨 Dynamic backgrounds + dark/light toggle
 - 🛰️ Fully responsive (mobile-first)
-- 🧩 Modular code + animations
 - 📦 Offline-ready PWA
 - 📣 Toast alerts with SweetAlert2
 - ⚙️ Built with Tailwind CSS and sweet, sweet JavaScript
