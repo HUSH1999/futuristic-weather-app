@@ -27,10 +27,10 @@ WeatherX is a sleek, modern, and responsive weather forecast web app built with 
 
 ## 🖥️ Live Demo
 
-> [🌐 View Live on GitHub Pages](https://hush1999.github.io/futuristic-weather-app.git)
+> [🌐 View Live on GitHub Pages](https://hush1999.github.io/futuristic-weather-app/)
 
 ## 🔧 Setup & Installation
 
 ```bash
-git clone https://github.com/HISH1999/futuristic-weather-app.git
-cd your-repo-name
+git clone https://github.com/HUSH1999/futuristic-weather-app.git
+cd futuristic-weather-app
