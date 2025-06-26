@@ -32,5 +32,5 @@ WeatherX is a sleek, modern, and responsive weather forecast web app built with 
 ## 🔧 Setup & Installation
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/HISH1999/futuristic-weather-app.git
 cd your-repo-name
